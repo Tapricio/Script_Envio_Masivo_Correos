@@ -4,6 +4,9 @@ from src.utils.contenido_correo import generar_contenido_html
 import time
 from correos_prueba import destinos
 from src.utils.interfaz_editor import obtener_contenido_desde_interfaz
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 #destinos = destinos
