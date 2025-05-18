@@ -11,11 +11,19 @@ def generar_contenido_html():
     # Firma en HTML
     firma = """
     <br><br>
-    <hr>
-    <p style="color: green; font-weight: bold;">Saludos,<br>Patricio Torres</p>
+    <img src="cid:imagen_cid" alt="Imagen" style="width: 230px; height: auto;" />
     """
-
+    cuerpo_correo = """
+    <div style="color: grey; font-family: Verdana, sans-serif;">
+        <br>--<br>
+        <strong>Patricio Torres Cisternas</strong><br>
+        Asistente Soporte y Redes <br>
+        +569 6761 2235 <br>
+        Avenida Apoquindo 6750 piso 21, Las Condes, RM. <br>
+        <a href="www.fundacioncchc.cl">www.fundacioncchc.cl</a> <br>
+    </div>
+    """
     # Concatenar cuerpo con la firma
-    cuerpo_html_con_firma = cuerpo_html + firma
-
+    #cuerpo_html_con_firma = cuerpo_html + firma
+    cuerpo_html_con_firma = cuerpo_correo + firma
     return cuerpo_html_con_firma
